@@ -1,26 +1,24 @@
+// 1. Third-party library / (S)CSS
 import React from 'react';
-import logo from './logo.svg';
+import WebFont from 'webfontloader';
+import '~/assets/vendors/flaticon/flaticon.css';
+import '~/assets/vendors/linericon/style.css';
+
+// 2. Custom (S)CSS
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// 3. Local modules / resource files
+import HomePage from './pages/page-home';
 
-export default App;
+
+WebFont.load({
+	google: {
+		families: ['Roboto:300,400,400i,500,600,700'],
+	},
+});
+
+export default function App() {
+	return (
+		<HomePage />
+	);
+}

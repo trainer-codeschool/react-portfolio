@@ -1,0 +1,58 @@
+{
+	"extends": [
+		"airbnb",
+		"airbnb/hooks"
+	],
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+	"settings": {
+		"import/resolver": {
+			"alias": {
+				"map": [
+					[ "~", "./src" ]
+				]
+			}
+		}
+	},
+	"rules": {
+		"arrow-parens": 0,
+		"eol-last": 0,
+		"indent": [ "error", "tab" ],
+		"linebreak-style": 0,
+		"quotes": [ "error", "single" ],
+		"semi": [ "error", "always" ],
+		"max-len": [ "error", { "code": 120 }],
+		"no-multiple-empty-lines": 0,
+		"no-param-reassign": ["error", { "props": false }],
+		"no-plusplus": 0,
+		"no-tabs": 0,
+		"no-use-before-define": ["error", "nofunc"],
+		"no-unused-vars": "warn",
+
+		"import/extensions": 0,
+		"react/jsx-indent": [ "error", "tab" ],
+		"react/jsx-filename-extension": [
+			"warn",
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"react/jsx-no-target-blank": 0,
+		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-props-no-spreading": 0,
+		"react/jsx-one-expression-per-line": 0,
+		"react/button-has-type": 0,
+		"react/state-in-constructor": 0,
+		"react/destructuring-assignment": 0,
+		"react/forbid-prop-types": ["warn", { "forbid": ["array", "object"] }],
+		"react/prop-types": ["warn", { "skipUndeclared": true, "ignore": ["children"] }],
+		"jsx-a11y/anchor-is-valid": 0
+	}
+}

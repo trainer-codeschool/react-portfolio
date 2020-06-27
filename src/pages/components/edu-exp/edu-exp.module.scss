@@ -1,0 +1,33 @@
+@import "~src/assets/css/mixins";
+
+
+.edu-exp {
+	@include bg-gradient();
+
+	:global .nav.nav-tabs {
+		display: block;
+		text-align: center;
+		border: none;
+		margin-bottom: 120px;
+
+		a {
+			display: inline-block;
+			margin-right: 8px;
+			line-height: 50px;
+			border-radius: 5px;
+			padding: 0px 40px;
+			font-size: 13px;
+			font-weight: 500;
+			color: #fff;
+			font-family: $font-family;
+			border: 1px solid #00c9e0;
+			background: rgba(255, 255, 255, 0.2);
+
+			&.active {
+				background: #fff;
+				color: #222222;
+			}
+		}
+	}
+
+}

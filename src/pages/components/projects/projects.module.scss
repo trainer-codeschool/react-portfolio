@@ -1,0 +1,31 @@
+@import "~src/assets/css/mixins";
+
+
+.filter {
+	margin-bottom: 50px;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin-right: 45px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+
+		&:hover button,
+		&.active button {
+			color: #00b050;
+		}
+
+		button {
+			background-color: transparent;
+			border: none;
+			color: $header-color;
+			font-size: 12px;
+			font-weight: bold;
+			transition: all 300ms linear 0s;
+			text-transform: uppercase;
+		}
+	}
+}

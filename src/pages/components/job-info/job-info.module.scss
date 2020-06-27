@@ -1,0 +1,98 @@
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+@import "~src/assets/css/mixins";
+
+
+.welcomeText {
+	h4 {
+		color: #222222;
+		font-size: 36px;
+		margin-bottom: 18px;
+		text-transform: uppercase;
+	}
+
+	p {
+		max-width: 495px;
+		margin-bottom: 40px;
+	}
+}
+
+.itemBlock {
+	border: 1px solid #eeeeee;
+	padding: 20px 20px;
+	border-radius: 5px;
+
+	i {
+		@include bg-gradient();
+		font-size: 24px;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	h4 {
+		font-size: 24px;
+		font-family: $font-family;
+		font-weight: bold;
+		color: $header-color;
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+
+	p {
+		font-size: $font-size;
+		font-family: $font-family;
+		color: $normal-color;
+		margin-bottom: 0px;
+	}
+}
+
+.skillSet {
+	padding: 20px 0px 0px 0px;
+
+	.skillItem {
+		margin-bottom: 18px;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+		h4 {
+			text-align: none;
+			font-size: 14px;
+			font-family: $font-family;
+			font-weight: 500;
+			color: #222222;
+			margin-bottom: 15px;
+		}
+
+		.progress {
+			border: 1px solid #eeeeee;
+			padding: 5px;
+			border-radius: 10px;
+		}
+
+		.progressTrack {
+			height: 10px;
+			border-radius: 10px;
+			background: #e8e8e8;
+		}
+
+		.progressBar {
+			width: 0%;
+			transition: width 2s ease;
+			height: 10px;
+			border-radius: 5px;
+			vertical-align: middle;
+			align-self: center;
+			@include bg-gradient();
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	// @media (max-width:767px) {
+	.itemBlock {
+		margin-bottom: 30px;
+	}
+}
