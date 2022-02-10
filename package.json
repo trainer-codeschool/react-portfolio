@@ -24,7 +24,7 @@
 		"@testing-library/user-event": "~7.2",
 		"bootstrap": "~4.5",
 		"classnames": "^2.2.6",
-		"node-sass": "~4.14",
+		"node-sass": "~7.0",
 		"react": "~16.13",
 		"react-alice-carousel": "^1.19.3",
 		"react-bootstrap": "~1.0",
